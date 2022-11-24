@@ -19,18 +19,14 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="d-flex mt-3" style="width: 90%;">
+        <div id="navLogo" class="d-flex mt-3" style="width: 90%;">
             <div class="d-flex ms-5">
                 <a href="#"><img src="resources/Logo.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                
             </div>
-            <div class=" d-flex justify-content-center" style="width: 60%;">
+            <div  id="navSearch" class=" d-flex justify-content-center" style="width: 60%;">
                 <form class="d-flex ms-5 ps-5 mt-2 " role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
                     <button class="btn btn-outline-secondary" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
                             width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path
@@ -38,8 +34,8 @@
                         </svg></button>
                 </form>
             </div>
-            <div class=" d-flex justify-content-end" style="width: 40%;">
-                <button type="button" style="width:25%;" class="btn btn-outline-success" id="myInput"
+            <div class=" d-flex justify-content-end" style="width: 30%;">
+                <button type="button" style="width:50%;" class="btn btn-outline-success" id="myInput"
                     data-target="#EjemploModal">Login</button>
             </div>
         </div>
@@ -57,7 +53,7 @@
                 </svg></a>
         </div>
     </div>
-    <div class="d-flex justify-content-between ms-5 ps-5 pe-5 me-5">
+    <div id="starWars" class="d-flex justify-content-between ms-5 ps-5 pe-5 me-5">
         <div class="d-flex flex-column">
             <img src="resources/starWars/unsplash_1VV1MRafd7A.png" class="rounded float-start">
             <p class="h5 ms-3 text-muted">Producto XYZ</p>
@@ -107,7 +103,7 @@
                 </svg></a>
         </div>
     </div>
-    <div class="d-flex justify-content-between ms-5 ps-5 pe-5 me-5">
+    <div id="starWars" class="d-flex justify-content-between ms-5 ps-5 pe-5 me-5">
         <div class="d-flex flex-column ">
             <img src="resources/dispositives/unsplash_0POwK6iAiRQ.png" class="rounded float-start">
             <p class="h5 text-center text-muted">Consola y control XYZ</p>
@@ -157,7 +153,7 @@
                 </svg></a>
         </div>
     </div>
-    <div class="d-flex justify-content-between ms-5 ps-5 pe-5 me-5">
+    <div id="starWars" class="d-flex justify-content-between ms-5 ps-5 pe-5 me-5">
         <div class="d-flex flex-column ">
             <img src="resources/other/unsplash_bUgaIaZysH0.png" class="rounded float-start">
             <p class="h5 text-center text-muted">Camiseta SNES</p>
@@ -197,68 +193,108 @@
 
 
     </div>
-    <div class="d-flex p-5 m-5">
+    <div class="d-flex p-5 m-5" id="starWarss" >
         <div class="ms-5 mt-5 ps-5 d-flex flex-column text-center">
-            <a class="text-decoration-none text-dark" href=""><p class="h4 mb-4 " >Quienes somos</p></a>
-            <a class="text-decoration-none text-dark" href=""><p class="h4 mb-4">Politica de privacidad</p></a>
-            <a class="text-decoration-none text-dark" href=""><p class="h4 mb-4">Programa de fidelidad</p></a>
-            <a class="text-decoration-none text-dark" href=""><p class="h4 mb-4">Nuestras tiendas</p></a>
-            <a class="text-decoration-none text-dark" href=""><p class="h4 mb-4">Quiero ser franquiciado</p></a>
-            <a class="text-decoration-none text-dark" href=""><p class="h4 mb-4">Anuncie aqui</p></a>
+            <a class="text-decoration-none text-dark" href="">
+                <p class="h4 mb-4 ">Quienes somos</p>
+            </a>
+            <a class="text-decoration-none text-dark" href="">
+                <p class="h4 mb-4">Politica de privacidad</p>
+            </a>
+            <a class="text-decoration-none text-dark" href="">
+                <p class="h4 mb-4">Programa de fidelidad</p>
+            </a>
+            <a class="text-decoration-none text-dark" href="">
+                <p class="h4 mb-4">Nuestras tiendas</p>
+            </a>
+            <a class="text-decoration-none text-dark" href="">
+                <p class="h4 mb-4">Quiero ser franquiciado</p>
+            </a>
+            <a class="text-decoration-none text-dark" href="">
+                <p class="h4 mb-4">Anuncie aqui</p>
+            </a>
         </div>
-        <div class="ms-5 ps-5 mt-3 pt-5" >
+        <div class="ms-5 ps-5 mt-3 pt-5">
             <form class="ms-4">
                 <div class="mb-3">
-                  <p class="h6 text-muted">Nombre</p>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <p class="h6 text-muted">Nombre</p>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                     <p class="h6 text-muted">Escribe tu mensaje</p>
-                  <input  type="text" class="form-control" id="exampleInputPassword1">
+                    <input type="text" class="form-control" id="exampleInputPassword1">
                 </div>
                 <button type="button" class="btn btn-outline-primary">Enviar mensaje</button>
-              </form>
+            </form>
         </div>
     </div>
     <div class="text-center mb-5">
         <h2>Brandon Parra</h2>
     </div>
 
-    <!--popup-->
+
+                                        <!--popup-->
+
+    <!----login------>
     <div class="modal fade" id="a" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Inicio de sesion</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Correo</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                            <label for="loginNombre" class="form-label">Correo</label>
+                            <input type="text" class="form-control" id="loginNombre">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="loginContraseña" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="loginContraseña">
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" id="saveChanges">Iniciar sesion</button>
                         </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
+    <!----agregar------>
+    <div class="modal fade" id="agregar" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crear nuevo producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Correo</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="precio" class="form-label">Precio</label>
+                            <input type="text" class="form-control" id="precio">
+                        </div>
+                        <div class="mb-3">
+                            <label for="addImagen" class="form-label">Imagen del producto</label>
+                            <input type="file" class="form-control" id="addImagen">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" id="addNew">agregar uno nuevo</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-        <script>
-            $(document).ready(function () {
-                $("#myInput").click(function () {
-                    $("#a").modal("show");
-                });
-            });
-        </script>
+    <script src="javaScript/javaScript.js"></script>
 </body>
 
 </html>

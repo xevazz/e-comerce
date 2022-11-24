@@ -1,11 +1,28 @@
-const myModal = document.getElementById('a')
-const myInput = document.getElementById('myInput')
+const btnLogin = document.getElementById('saveChanges');
 
-(myInput).on('show.bs.modal',myModal, function () {
-    alert('hi');
-  })
-myInput.addEventListener('shown.bs.modal', function () {
-    myModal.focus()
-  })
+function login() {
+  var loginNom= document.getElementById('loginNombre').value;
+  var loginContra = document.getElementById('loginContraseña').value;
+  
+
+  if(loginNom=='Brandon' && parseInt(loginContra) ==123){
+    alert("inicio de sesion exitoso")
+    window.location.href = "todosLosProductos.html";
+  }
+  else{
+    alert("inicio de sesion fracaso")
+  }
+}
+
+btnLogin.addEventListener('click', login)
+
+
+////////////popup
+///login
+$(document).ready(function () {
+  $("#myInput").click(function () {
+      $("#a").modal("show");
+  });
+});
 
 
